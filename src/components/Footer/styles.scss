@@ -1,0 +1,134 @@
+.Footer {
+    background-color: #242424;
+    color: white;
+    padding: 5.5rem;
+    text-align: center;
+
+    &__title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    &>p {
+        font-size: 1.25rem;
+        margin: 1.5rem auto;
+    }
+
+    &__gmail {
+        padding: 0.5rem 2rem;
+        outline: none;
+        font-size: 1.15rem;
+        margin-right: 0.5rem;
+
+        border-radius: 3px;
+        border: none;
+
+    }
+
+    &__submit {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.15rem;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out 0s;
+        color: #fff;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+
+    &__submit:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    &__info {
+        text-align: start;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 10px auto;
+        }
+
+        &--item {
+            margin: auto 2rem;
+        }
+    }
+
+    &__icon {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+        p {
+            font-size: 12px;
+        }
+
+        &--logo,
+        &--MXH {
+            font-size: 2rem;
+        }
+
+        &--MXH>i {
+            margin: auto 0.5rem;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 910px) {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // justify-content: start;
+
+
+
+        .Footer__gmail {
+            padding: 1rem 1.2rem;
+            width: 25rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
+
+        .Footer__submit {
+            padding: 1rem 1.2rem;
+            width: 25rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .Footer__info {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto;
+
+        grid-column: 2;
+
+        &--item {
+            margin: 1rem 1.5rem;
+        }
+    }
+
+    .Footer__icon {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 2rem auto;
+        }
+    }
+
+}
